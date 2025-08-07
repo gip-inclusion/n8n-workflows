@@ -1,0 +1,13 @@
+---
+const {
+  workflow,
+} = Astro.props
+
+const stringifiedWorkflow = JSON.stringify(workflow)
+---
+
+<script>
+  import "@n8n_io/n8n-demo-component";
+</script>
+
+<n8n-demo workflow={stringifiedWorkflow}></n8n-demo>
